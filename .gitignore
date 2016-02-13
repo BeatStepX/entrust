@@ -12,3 +12,5 @@ storage/
 .env.php
 .env
 .env.example
+*.sublime-project
+*.sublime-workspace
