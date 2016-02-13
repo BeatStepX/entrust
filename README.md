@@ -5,9 +5,7 @@
 [![License](https://poser.pugx.org/zizaco/entrust/license.svg)](https://packagist.org/packages/zizaco/entrust)
 [![Total Downloads](https://img.shields.io/packagist/dt/zizaco/entrust.svg)](https://packagist.org/packages/zizaco/entrust)
 
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/cc4af966-809b-4fbc-b8b2-bb2850e6711e/small.png)](https://insight.sensiolabs.com/projects/cc4af966-809b-4fbc-b8b2-bb2850e6711e)
-
-Entrust is a succinct and flexible way to add Role-based Permissions to **Laravel 5**.
+Entrust is a succinct and flexible way to add Role-based Permissions to **Laravel 5.2**.
 
 If you are looking for the Laravel 4 version, take a look [Branch 1.0](https://github.com/Zizaco/entrust/tree/1.0). It
 contains the latest entrust version for Laravel 4.
@@ -37,10 +35,18 @@ contains the latest entrust version for Laravel 4.
 
 ## Installation
 
-In order to install Laravel 5 Entrust, just add
-
-    "beatstepx/entrust": "dev-laravel-5"
-
+In order to install Laravel 5.2 Entrust, just add
+```json
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/BeatStepX/entrust"
+        }
+    ],
+    "require": {
+        "zizaco/entrust": "dev-master"  
+    }
+```
 to your composer.json. Then run `composer install` or `composer update`.
 
 Then in your `config/app.php` add
